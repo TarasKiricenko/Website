@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <MyWorkMap />
-      <div className="col-9 mx-auto" style={{ display: "flex", justifyContent: "space-evenly" }}>
+      <div className="col-9 mx-auto container" style={{ display: "flex", justifyContent: "space-evenly" }}>
         <div className="d-grid col-5 mx-auto me-3 ms-3 mt-3 purple">
           <button className="btn disabled" type="button">Eligible to work</button>
         </div>
@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
       </div>
       <hr></hr>
-      <div className="col-9 mx-auto text-center mt-0">
+      <div className="col-9 mx-auto container text-center mt-0">
         <p>Taras Kiricenko, 2021. Build with React and Bootstrap. </p>
       </div>
     </>

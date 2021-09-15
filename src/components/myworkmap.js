@@ -14,7 +14,7 @@ const mapData = {
 
 const MyWorkMap = () => {
   return (
-      <div className="col-9 mx-auto mt-1">
+      <div className="col-9 mx-auto container mt-1">
       <VectorMap
         map={"world_mill"}
         backgroundColor="transparent"

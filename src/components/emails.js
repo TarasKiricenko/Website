@@ -65,7 +65,7 @@ const Emails = () => {
         <div className="d-grid gap-2 col-8 mx-auto">
           <h5 className="text-center fw-bold">Would you like to get in touch directly? Send me an Email!</h5>
         </div>
-        <div className="d-grid gap-2 col-9 mx-auto">
+        <div className="d-grid gap-2 col-7 mx-auto container">
           <label htmlFor="FormControlInput1" className="form-label">Your name:</label>
           <input
             type="text"
@@ -75,9 +75,10 @@ const Emails = () => {
             placeholder="Enter your name"
             value={toSend.from_name}
             onChange={handleChange}
+            maxlength="25"
             required />
         </div>
-        <div className="d-grid gap-2 col-9 mx-auto mt-3">
+        <div className="d-grid gap-2 col-7 mx-auto container mt-3">
           <label htmlFor="FormControlInput2" className="form-label">Your email address, so I know where to reply:</label>
           <input
             type="email"
@@ -87,9 +88,10 @@ const Emails = () => {
             placeholder="name@example.com"
             value={toSend.reply_to}
             onChange={handleChange}
+            maxlength="40"
             required />
         </div>
-        <div className="d-grid gap-2 col-9 mx-auto mt-3">
+        <div className="d-grid gap-2 col-7 mx-auto container mt-3">
           <label htmlFor="FormControlTextarea" className="form-label">Place for your message:</label>
           <textarea
             type="text"
@@ -102,7 +104,7 @@ const Emails = () => {
             onChange={handleChange}
             required></textarea>
         </div>
-        <div className="d-grid gap col-7 mt-3 mx-auto" id="toastId">
+        <div className="d-grid gap col-7 mt-3 mx-auto container" id="toastId">
           <button className="btn btn-secondary" type="submit">Send email</button>
         </div>
       </form>
