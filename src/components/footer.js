@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <MyWorkMap />
-      <div className="col-9 mx-auto container" style={{ display: "flex", justifyContent: "space-evenly" }}>
+      <div className="col-9 mx-auto" style={{ display: "flex", justifyContent: "space-evenly" }}>
         <div className="d-grid col-5 mx-auto me-3 ms-3 mt-3 purple">
           <button className="btn disabled" type="button">Eligible to work</button>
         </div>
